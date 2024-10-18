@@ -43,6 +43,7 @@ ul {
 }
 #encabezado {
     margin: 30px 0;
+    color: #C1403B;
 }
 .submenu {
     position: relative;
@@ -65,7 +66,7 @@ ul {
 }
 .vacio {
     padding: 10px;
-    background-color: crimson;
+    background-color: #C1403B;
     text-align: center;
     border-radius: 10px;
     color: white;
@@ -100,11 +101,11 @@ ul {
 
 .barra {
     padding: 20px 0;
-    background: #741d51; /* Old browsers */
-    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+    background: #C1403B; /* Old browsers */
+    background: -moz-linear-gradient(left, #C1403B#741d51 0%, #e44e52 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #C1403B 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #C1403B 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C1403B', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
 }
 
 .barra p {
