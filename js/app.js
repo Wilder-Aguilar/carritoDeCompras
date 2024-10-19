@@ -1,4 +1,3 @@
-
 const carrito = document.querySelector('#carrito');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
@@ -36,31 +35,39 @@ function leerDatosCurso(curso) {
     carritoHTML();
 }
 
-    //Muestra el carrito en el html
+//Muestra el carrito en el html
 function carritoHTML() {
     //Limpiar el HTML
     limpiarHTML();
 
     // rECORRE EL CARRITO Y GENERA HTNL
     articulosCarrito.forEach(curso => {
+        // const { imagen, titulo, precio, cantidad, id} = curso;
         const row = document.createElement('tr');
         row.innerHTML = `
         <td>
+            <img src ="${curso.imagen}" width="90" height="80"> 
+        </td>
+        <td>
         ${curso.titulo}
+        </td>
+        <td>
+        ${curso.precio}
+        </td>
+        <td>
+        ${curso.cantidad}
+        </td>
+        <td>
+            <a href="#" class="borrar-curso" data-id="${curso.id}" > X </a> 
         </td>
         `;
         //agrega el html del carrito en el boddy
         contenedorCarrito.appendChild(row)
-
     });
 }
 
 function limpiarHTML() {
-    while(contenedorCarrito.firstChild){
+    while (contenedorCarrito.firstChild) {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild)
     }
 }
-
-
-
-
